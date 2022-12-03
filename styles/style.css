@@ -9,4 +9,21 @@
 
 *{
     font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    width: 98vw;
+    box-sizing: border-box;
+}
+
+.container{
+    box-sizing: inherit;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.box{
+    box-sizing: inherit;
+
 }
