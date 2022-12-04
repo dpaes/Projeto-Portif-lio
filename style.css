@@ -7,101 +7,142 @@
   --bg-techs: #cb92b1;
 }
 
-html{
+body{
   font-family: "Merriweather Sans", sans-serif;
   margin: 0;
-  padding: 0;
-  height: 98vh;
-  width: 98vw;
-  box-sizing: border-box;
-  border: 2px solid black;
+  width: 99vw;
+  height: 99vh;
+  border: 1px solid black;
 }
 
 .container {
-  box-sizing: inherit;
-  
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: #22212c;
 }
 
 .box {
   box-sizing: inherit;
+  border: 1px solid black;
+}
+
+.box-left{
+  display: flex;
+  border: inherit;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  gap: 30px;
+
 }
 
 .box-profile {
-  position: absolute;
-  width: 348px;
-  height: 292px;
-  left: 40px;
-  top: 40px;
+  background-color: blue;
+  order: -2;
+  width: 50%;
+  height: 40%;
+  margin-top: 3vh;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .box-links {
-  position: absolute;
-  width: 348px;
-  height: 348px;
-  left: 40px;
-  top: 362px;
+  background-color: blueviolet;
+  order: -1;
+  width: 80%;
+  height: 30%;
+  border-radius: 10px;
 }
 
 .box-tech {
-  position: absolute;
-  width: 348px;
-  height: 208px;
-  left: 40px;
-  top: 740px;
+  background-color: aqua;
+  order: 0;
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
 }
 
 .box-experiences {
-  position: absolute;
-  width: 348px;
-  height: 349px;
-  left: 40px;
-  top: 978px;
+  background-color: brown;
+  order: 1;
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
 }
 
 .box-education {
-  position: absolute;
-  width: 348px;
-  height: 352px;
-  left: 40px;
-  top: 1357px;
+  background-color: yellow;
+  order: 2;
+  width: 80%;
+  height: 20%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.box-right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "myproject myproject"
+  "projectOne projectTwo"
+  "recentPosts recentPosts"
+  "posts posts";
+  border: inherit;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
 }
 
 .box-myprojects {
-  position: absolute;
-  width: 952px;
-  height: 86px;
-  left: 448px;
-  top: 40px;
+  width: 90%;
+  height: auto;
+  grid-area: myproject;
+  margin-top: 3vh;
+  margin-right: 5%;
+  border-radius: 10px;
+  background-color: chartreuse;
 }
 
 .box-projectOne {
-  position: absolute;
-  width: 461px;
-  height: 186px;
-  left: 448px;
-  top: 157px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  grid-area: projectOne;
+  background-color: violet;
 }
 
 .box-projectTwo {
-  position: absolute;
-  width: 461px;
-  height: 186px;
-  left: 939px;
-  top: 157px;
+  width: 90%;
+  height: auto;
+  margin-right: 3vw;
+  grid-area: projectTwo;
+  border-radius: 10px;
+  background-color: tomato;
 }
 
 .box-recentPosts {
-  position: absolute;
-  width: 952px;
-  height: 86px;
-  left: 448px;
-  top: 373px;
+  width: 90%;
+  height: auto;
+  margin-right: 5%;
+  grid-area: recentPosts;
+  border-radius: 10px;
+  background-color: steelblue;
 }
 
 .box-posts {
-  position: absolute;
-  width: 952px;
-  height: 201px;
-  left: 448px;
-  top: 489px;
+  width: 90%;
+  height: auto;
+  grid-area: posts;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  background-color: orange;
 }
