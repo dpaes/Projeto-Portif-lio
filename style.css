@@ -47,7 +47,6 @@ body{
 /* classe para estilização comum das divs */
 .box {
   box-sizing: inherit;
-  border: 1px solid var(--border-black-boxes);
   color: var(--text-color);
 }
 
@@ -71,7 +70,7 @@ body{
   width: 80%;
   height: 40%;
   margin-top: 3vh;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0px 4px 4px var(--box-shadow);
   display: flex;
@@ -81,9 +80,10 @@ body{
 
 /* classe da imagem do perfil do individuo */
 .imgProfileRound{
+  box-sizing: inherit;
   border-radius: 50%;
-  width: 25%;
-  height: 25%;
+  width: auto;
+  height: 10vh;
   border: 2px solid var(--border-profile-img);
 }
 
@@ -93,7 +93,7 @@ body{
   order: -1;
   width: 80%;
   height: 30%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -137,7 +137,7 @@ body{
   order: 0;
   width: 80%;
   height: 20%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -180,7 +180,7 @@ body{
   order: 1;
   width: 80%;
   height: 20%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
@@ -195,7 +195,7 @@ body{
   width: 80%;
   height: 20%;
   margin-bottom: 5%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
@@ -226,16 +226,24 @@ body{
   grid-area: myproject;
   margin-top: 3vh;
   margin-right: 5%;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.myprojects-items{
+  display: inline-flex;
+  padding: 2% 5% 2% 5%;
 }
 
 /* div filho de box-right, responsável por apresentar o primeiro projeto */
 .box-projectOne {
   width: 90%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   grid-area: projectOne;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
@@ -247,7 +255,7 @@ body{
   height: auto;
   margin-right: 3vw;
   grid-area: projectTwo;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
 }
@@ -255,22 +263,46 @@ body{
 /* div filho de box-right, responsável de apresentar posts recentes */
 .box-recentPosts {
   width: 90%;
-  height: auto;
+  height: 10vh;
   margin-right: 5%;
   grid-area: recentPosts;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
+}
+
+.title-recent-posts{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  align-items: center;
+  margin-left: 5%;
 }
 
 /* div filho de box-right, responsável de apresentar as postagens */
 .box-posts {
   width: 90%;
-  height: auto;
+  height: 20vh;
   grid-area: posts;
-  margin-bottom: 5%;
-  margin-right: 5%;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2.5%;
+}
+
+.box-img-posts{
+  width: 20%;
+  height: 100%;
+  display: inline;
+}
+
+.imgPostRound{
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: auto;
+  height: 10vh;
 }
