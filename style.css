@@ -106,7 +106,6 @@ body{
   align-content: center;
   font-weight: 400;
   font-size: small;
-  text-decoration: none;
 }
 
 /* div filho de box-links, responsável por alinhar os textos ao lado dos icones */
@@ -115,9 +114,6 @@ body{
   flex-direction: column;
   box-sizing: inherit;
   align-items: baseline;
-  text-decoration: inherit;
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 /* div filho de box-inside-links, responsável por alinhar os icones e espaçamentos */
@@ -130,6 +126,17 @@ body{
 /* alinha o primeiro conteudo de box-links para ter espaçamento de acordo com layout */
 #localizacaoDiv{
   margin-top: 5%;
+}
+
+#localizacaoLink,
+#malaLink,
+#githubLink,
+#linkedinLink,
+#twitterLink,
+#globeLink,
+#mailLink{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 /* alinha o ultimo conteudo de box-links para ter espaçamento de acordo com layout */
