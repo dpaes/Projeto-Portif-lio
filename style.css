@@ -37,11 +37,16 @@ body{
 .title-boxes{
   font-weight: 700;
   font-size: x-large;
+  display: inline;
+  margin-top: 5vh;
+  margin-bottom: 0.5px;
 }
 
 .miniText-boxes{
   font-weight: 400;
   font-size: x-small;
+  display: inline;
+  margin-bottom: 5vh;
 }
 
 /* classe para estilização comum das divs */
@@ -83,7 +88,7 @@ body{
   box-sizing: inherit;
   border-radius: 50%;
   width: auto;
-  height: 10vh;
+  height: 15vh;
   border: 2px solid var(--border-profile-img);
 }
 
@@ -99,6 +104,9 @@ body{
   flex-direction: column;
   box-sizing: inherit;
   align-content: center;
+  font-weight: 400;
+  font-size: small;
+  text-decoration: none;
 }
 
 /* div filho de box-links, responsável por alinhar os textos ao lado dos icones */
@@ -107,6 +115,9 @@ body{
   flex-direction: column;
   box-sizing: inherit;
   align-items: baseline;
+  text-decoration: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 /* div filho de box-inside-links, responsável por alinhar os icones e espaçamentos */
@@ -358,7 +369,7 @@ body{
   box-sizing: inherit;
   border-radius: 50%;
   width: auto;
-  height: 10vh;
+  height: 15vh;
 }
 
 .box-align-post-middleTop{
