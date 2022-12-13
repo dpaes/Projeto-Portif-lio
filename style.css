@@ -19,6 +19,7 @@ body{
   height: auto;
   background-color: var(--body-bg-color);
   box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 /* container maior para organizar divs menores */
@@ -32,11 +33,16 @@ body{
   background-color: var(--body-bg-color);
 }
 
+/* todos os titulos do layout */
+.title-boxes{
+  font-weight: 700;
+  font-size: large;
+}
+
 /* classe para estilização comum das divs */
 .box {
   box-sizing: inherit;
   border: 1px solid var(--border-black-boxes);
-  font-family: "Merriweather Sans", sans-serif;
   color: var(--text-color);
 }
 
@@ -127,20 +133,33 @@ body{
   box-shadow: 0px 4px 4px var(--box-shadow);
   display: flex;
   flex-direction: column;
+  box-sizing: inherit;
+}
+
+#title-tech{
+  margin-left: 5%;
+}
+
+.box-techButtons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10% 5%;
+  margin: 5% 5% 10% 5%; 
 }
 
 /* botões da box-tech e suas estilizações */
-.techsButtons{
+.techButtons{
   background-color: var(--bg-techs);
-  border-radius: 30%;
-  width: 20%;
-  height: 30px;
+  border-radius: 20px;
+  box-sizing: inherit;
+  width: 5vw;
+  height: 2.5vh;
   font-size: small;
   text-align: center;
-  align-content: center;
+  align-content: content;
+  color: var(--border-black-boxes);
+  border: none;
 }
-
-
 
 /* div filho do box-left, responsável pela lista de experiencias com suas estilizações */
 .box-experiences {
@@ -150,6 +169,10 @@ body{
   height: 20%;
   border-radius: 10px;
   box-shadow: 0px 4px 4px var(--box-shadow);
+}
+
+#title-experiences{
+  margin-left: 5%;
 }
 
 /* div filho do box-left, responsável por listar os cursos do individuo. */
