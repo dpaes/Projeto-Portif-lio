@@ -247,17 +247,62 @@ body{
   grid-area: projectOne;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
+  padding: 5% 10% 5% 10%;
+}
+
+.box-projectOne-folder,
+.box-projectTwo-folder{
+  display: inline-flex;
+  gap: 1.5vw;
+}
+
+.box-projectOne-star,
+.box-projectTwo-star,
+.box-projectOne-git-branch,
+.box-projectTwo-git-branch{
+  display: inline-flex;
+}
+
+.box-icon-language{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.box-icons-assets{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.align-box-icon-language{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15vw;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.icon-language{
+  background-color: #E7DE79;
+  border: 2px solid #837E9F;
+  border-radius: 50%;
+  width: 0.75vw;
+  height: 1.5vh;
 }
 
 /* div filho de box-right, responsável por apresentar o segundo projeto */
 .box-projectTwo {
   width: 90%;
   height: auto;
-  margin-right: 3vw;
   grid-area: projectTwo;
   border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
+  padding: 5% 10% 5% 10%;
 }
 
 /* div filho de box-right, responsável de apresentar posts recentes */
@@ -283,26 +328,70 @@ body{
 /* div filho de box-right, responsável de apresentar as postagens */
 .box-posts {
   width: 90%;
-  height: 20vh;
+  height: 40vh;
   grid-area: posts;
   border-radius: 20px;
   background-color: var(--bg-cards);
   box-shadow: 0px 4px 4px var(--box-shadow);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  box-sizing: border-box;
   padding: 2.5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "img middleTop middleTop middleTop"
+    "img middleBottom middleBottom middleBottom"
+    ;
 }
 
-.box-img-posts{
-  width: 20%;
+.box-img-post{
+  width: auto;
   height: 100%;
-  display: inline;
+  box-sizing: inherit;
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgPostRound{
-  box-sizing: border-box;
+  box-sizing: inherit;
   border-radius: 50%;
   width: auto;
   height: 10vh;
+}
+
+.box-align-post-middleTop{
+  box-sizing: inherit;
+  grid-area: middleTop;
+  font-size: large;
+  font-weight: 700;
+  font-style: bold;
+  width: 100%;
+  height: auto;
+}
+
+#font400{
+  font-size: small;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.box-align-post-middleBottom{
+  box-sizing: inherit;
+  grid-area: middleBottom;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+}
+
+#box-align-post-bottom{
+  box-sizing: inherit;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 5%;
+  font-size: small;
+  white-space: nowrap;
 }
