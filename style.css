@@ -10,6 +10,7 @@
   --border-profile-img: #00ff00;
   --box-shadow: rgba(0, 0, 0, 0.25);
   --border-black-boxes: #000000;
+  --color-icon-language: #e7de79;
 }
 
 /* padronização de tamanho de tela e background para layout */
@@ -38,37 +39,32 @@ body {
   font-weight: 700;
   font-size: x-large;
   display: inline;
-  margin-top: 5vh;
-  margin-bottom: 0.5px;
 }
 
-.miniText-boxes {
+.subtitle-boxes {
   font-weight: 400;
   font-size: x-small;
   display: inline;
-  margin-bottom: 5vh;
 }
 
 /* classe para estilização comum das divs */
 .box {
-  box-sizing: inherit;
+  box-sizing: border-box;
   color: var(--text-color);
 }
 
 /* div que alinha coluna esquerda com divs menores */
 .box-left {
   display: flex;
-  border: inherit;
   flex-direction: column;
   align-items: center;
-  align-content: center;
   width: 50%;
   height: 100%;
   justify-content: space-around;
   gap: 30px;
 }
 
-/* div filho da box-left, responsável pela foto de perfil, nome e função do individuo. */
+/* 1º div filho da box-left, responsável pela foto de perfil, nome e função do individuo. */
 .box-profile {
   background-color: var(--bg-cards);
   order: -2;
@@ -83,7 +79,18 @@ body {
   align-items: center;
 }
 
-/* classe da imagem do perfil do individuo */
+/* estilização titulo do perfil */
+#title-profile{
+  margin-top: 5vh;
+  margin-bottom: 0.5px;
+}
+
+/* estilização subtitulo do perfil */
+#subtitle-profile{
+  margin-bottom: 5vh;
+}
+
+/* classe da imagem do perfil */
 .imgProfileRound {
   box-sizing: inherit;
   border-radius: 50%;
@@ -92,7 +99,7 @@ body {
   border: 2px solid var(--border-profile-img);
 }
 
-/* div filho da box-left, responsável pelos links relacionados ao individuo */
+/* 2º div filho da box-left, responsável pelos links relacionados ao individuo */
 .box-links {
   background-color: var(--bg-cards);
   order: -1;
@@ -128,6 +135,7 @@ body {
   margin-top: 5%;
 }
 
+/* remove sublinhado da div dos links e estiliza com cor padrão */
 #localizacaoLink,
 #malaLink,
 #githubLink,
@@ -144,13 +152,13 @@ body {
   margin-bottom: 5%;
 }
 
-/* troca a cor dos icones do box-links */
+/* troca a cor dos icones de preto para a cor padrão do box-links */
 .linksIcons {
   filter: invert(53%) sepia(8%) saturate(1097%) hue-rotate(209deg)
     brightness(94%) contrast(87%);
 }
 
-/* div filho de box-left, responsável pela organização dos botões de tecnologias do individuo. */
+/* 3º div filho de box-left, responsável pela organização dos botões de tecnologias do individuo. */
 .box-tech {
   background-color: var(--bg-cards);
   order: 0;
@@ -164,14 +172,17 @@ body {
   padding-bottom: 2.5%;
 }
 
+/* ajusta alinhamento do titulo da box-tech */
 #title-tech {
   margin-left: 5%;
 }
 
+/* div que envolve o titulo da box-tech */
 .div-title-tech {
   width: 100%;
 }
 
+/* div que envolve os botões da box-tech*/
 .box-techButtons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,17 +195,18 @@ body {
   background-color: var(--bg-techs);
   border-radius: 20px;
   box-sizing: inherit;
-  width: 5vw;
+  width: 6vw;
   height: 2.5vh;
   font-size: small;
   font-weight: bold;
   text-align: center;
   color: var(--border-black-boxes);
+  /* necessário\/ pois os botões tem por padrão uma pequena borda */
   border: none;
   cursor: pointer;
 }
 
-/* div filho do box-left, responsável pela lista de experiencias com suas estilizações */
+/* 4º div filho do box-left, responsável pela lista de experiencias com suas estilizações */
 .box-experiences {
   background-color: var(--bg-cards);
   order: 1;
@@ -204,6 +216,7 @@ body {
   box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
+/* titulo da box-experiences */
 #title-experiences {
   margin-left: 5%;
   font-size: large;
@@ -211,24 +224,30 @@ body {
   font-style: normal;
 }
 
+/* estilização de fontes dos titulos secundarios da box-experiences */
 .box-experiences div ul li{
   font-size: medium;
   font-weight: 400;
   font-style: normal;
 }
 
+/* estilização de fontes dos paragrafos da box-experiences*/
 .box-experiences div ul p{
   font-size: small;
   font-weight: 400;
   font-style: normal;
 }
 
-#subsub-title-experiences{
+/* estilização das datas da box-experiences */
+#subsub-title-experiences1,
+#subsub-title-experiences2,
+#subsub-title-experiences3,
+#subsub-title-experiences4{
   font-weight: 300;
   font-size: smaller;
 }
 
-/* div filho do box-left, responsável por listar os cursos do individuo. */
+/* 5º div filho do box-left, responsável por listar os cursos do individuo. */
 .box-education {
   background-color: var(--bg-cards);
   order: 2;
@@ -239,6 +258,7 @@ body {
   box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
+/* titulo da box-education e seus styles */
 #title-education {
   margin-left: 5%;
   font-weight: 700;
@@ -246,18 +266,21 @@ body {
   font-style: normal;
 }
 
+/* estilização dos titulos secundarios da box-education */
 .box-education div ul li{
   font-size: medium;
   font-weight: 400;
   font-style: normal;
 }
 
+/* estilização dos paragrafos da box-education */
 .box-education ul p{
   font-size: small;
   font-weight: 400;
   font-style: normal;
 }
 
+/* estilização das datas da box-education */
 #subsub-title-education1,
 #subsub-title-education2,
 #subsub-title-education3,
@@ -281,7 +304,7 @@ body {
   gap: 30px;
 }
 
-/* div filho de box-right, responsável por apresentar os projetos */
+/* 1º div filho de box-right, responsável por apresentar os projetos */
 .box-myprojects {
   width: 90%;
   height: auto;
@@ -307,6 +330,12 @@ body {
   font-size: large;
 }
 
+#other-option-myprojects{
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
 /* div filho de box-right, responsável por apresentar o primeiro projeto */
 .box-projectOne {
   width: 90%;
@@ -318,6 +347,7 @@ body {
   padding: 5% 10% 5% 10%;
 }
 
+/* alinhamento do folder dos assets com o texto */
 .box-projectOne-folder,
 .box-projectTwo-folder {
   display: inline-flex;
@@ -360,8 +390,8 @@ body {
 }
 
 .icon-language {
-  background-color: #e7de79;
-  border: 2px solid #837e9f;
+  background-color: var(--color-icon-language);
+  border: 2px solid var(--text-color);
   border-radius: 50%;
   width: 0.75vw;
   height: 1.5vh;

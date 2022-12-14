@@ -4,161 +4,126 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.ico"
-      type="image/x-icon"
-    />
+    <!-- link do favicon para aparecer junto com o title -->
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"/>
     <title>Projeto Portifólio</title>
+    <!-- link das fontes MerriweatherSans com weight 700, 500 e 400-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+    <!-- link do arquivo css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- div mestra\/ -->
     <div class="container">
+      <!-- div referente a coluna do lado esquerdo\/ -->
       <div class="box box-left">
+        <!-- div do perfil\/ -->
         <div class="box box-profile">
-          <br />
-          <img
-            src="./images/foto perfil.jpg"
-            alt="Foto Perfil"
-            class="imgProfileRound"
-          />
-          <p class="title-boxes">Daniel Paes</p>
-          <p class="miniText-boxes">Full Stack Javascript</p>
+          <br/>
+          <img src="./images/foto perfil.jpg" alt="Foto Perfil" class="imgProfileRound"/>
+          <p class="title-boxes" id="title-profile">Daniel Paes</p>
+          <p class="subtitle-boxes" id="subtitle-profile">Full Stack Javascript</p>
         </div>
         <div class="box box-links">
           <div class="box-inside-links">
             <div class="box-image-links" id="localizacaoDiv">
-              <img
-                src="./assets/map-pin.svg"
-                alt="Localização Icon"
-                class="linksIcons"
-              />
+              <img src="./assets/map-pin.svg" alt="Localização Icon" class="linksIcons"/>
               <p>
-                <a
-                  id="localizacaoLink"
+                <a id="localizacaoLink"
                   href="https://www.google.com.br/search?q=brasil+localização&sxsrf=ALiCzsbPzWSX9KMfGEysmFuiwO-oyXqjLA%3A1670632378542&ei=utOTY6zbIOLT1sQPnu6x0A8&gs_ssp=eJzj4tDP1TcwNE0rMmD0EkkqSizOzFHIyU9OzMmsSjy8_PDifACklgwG&oq=Brasil+localiza&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgUILhCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOggIABCxAxCDAToLCC4QgwEQsQMQgAQ6CwgAEIAEELEDEIMBOgQIABADOgsILhCABBDHARCvAToHCAAQgAQQCkoECEEYAEoECEYYAFDUDFjmFGD1G2gBcAF4AIABdYgBvQeSAQMxLjiYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp"
-                  >Brasil</a
-                >
+                  >Brasil
+                </a>
               </p>
             </div>
-
             <div class="box-image-links">
-              <img
-                src="./assets/briefcase.svg"
-                alt="Mala Icon"
-                class="linksIcons"
-              />
-              <p><a href="https://gscrd.com.br" id="malaLink">GS Cred</a></p>
+              <img src="./assets/briefcase.svg" alt="Mala Icon" class="linksIcons"/>
+              <p>
+                <a href="https://gscrd.com.br" id="malaLink">GS Cred</a>
+              </p>
             </div>
-
             <div class="box-image-links">
-              <img
-                src="./assets/github.svg"
-                alt="githubIcon"
-                class="linksIcons"
-              />
+              <img src="./assets/github.svg" alt="githubIcon" class="linksIcons"/>
               <p>
                 <a href="https://github.com/dpaes" id="githubLink">dpaes</a>
               </p>
             </div>
-
             <div class="box-image-links">
-              <img
-                src="./assets/linkedin.svg"
-                alt="linkedinIcon"
-                class="linksIcons"
-              />
+              <img src="./assets/linkedin.svg" alt="linkedinIcon" class="linksIcons"/>
               <p>
-                <a
-                  href="https://www.linkedin.com/in/daniel-paes-683091b6/"
-                  id="linkedinLink"
-                  >Daniel Paes</a
-                >
+                <a href="https://www.linkedin.com/in/daniel-paes-683091b6/" id="linkedinLink">
+                  Daniel Paes
+                </a>
               </p>
             </div>
-
             <div class="box-image-links">
-              <img
-                src="./assets/twitter.svg"
-                alt="twitterIcon"
-                class="linksIcons"
-              />
+              <img src="./assets/twitter.svg" alt="twitterIcon" class="linksIcons"/>
               <p>
-                <a href="https://twitter.com/dpaes_3xd" id="twitterLink"
-                  >@dpaes_3xd</a
-                >
+                <a href="https://twitter.com/dpaes_3xd" id="twitterLink">
+                  @dpaes_3xd
+                </a>
               </p>
             </div>
-
             <div class="box-image-links">
-              <img
-                src="./assets/globe.svg"
-                alt="globeIcon"
-                class="linksIcons"
-              />
+              <img src="./assets/globe.svg" alt="globeIcon" class="linksIcons"/>
               <p>
                 <a href="./index.html" id="globeLink">www.danielpaes.com.br</a>
               </p>
             </div>
-
             <div class="box-image-links" id="mailDiv">
               <img src="./assets/mail.svg" alt="mailIcon" class="linksIcons" />
               <p>
-                <a href="mailto:daniel_3xd@hotmail.com" id="mailLink"
-                  >daniel_3xd@hotmail.com</a
-                >
+                <a href="mailto:daniel_3xd@hotmail.com" id="mailLink">
+                  daniel_3xd@hotmail.com
+                </a>
               </p>
             </div>
           </div>
         </div>
         <div class="box box-tech">
           <div class="div-title-tech">
-            <br />
+            <br/>
             <h2 class="title-boxes" id="title-tech">Tecnologias</h2>
           </div>
           <div class="box-techButtons">
             <a
               href="https://www.google.com.br/search?q=html+linguagem&sxsrf=ALiCzsZhzMeEnl9hHIXZ9mH9N__MaBFzxA%3A1670960463679&source=hp&ei=T9WYY_emJvTZ5OUPt6yRqA4&iflsig=AJiK0e8AAAAAY5jjX_PREpborQSky0hSJ7rbGQZFdaAv&ved=0ahUKEwi3ivnmrPf7AhX0LLkGHTdWBOUQ4dUDCAg&uact=5&oq=html+linguagem&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyCAgAEBYQHhAPMggIABAWEB4QDzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAeEAoyBggAEBYQHjoHCCMQ6gIQJzoGCCMQJxATOgQIIxAnOgQILhBDOgsIABCABBCxAxCDAToECAAQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6BwgAELEDEEM6DQgAEIAEELEDEIMBEAo6CggAELEDEIMBEEM6CAgAEIAEELEDOgoIABCABBAKEMsBOggIABCABBDLAToNCAAQFhAeEA8Q8QQQClCdFVjdM2DGOGgBcAB4AIABgAGIAY4MkgEEMC4xNJgBAKABAbABCg&sclient=gws-wiz"
-              ><input type="button" value="HTML" class="techButtons"
-            /></a>
+              ><input type="button" value="HTML" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=css+estiliza%C3%A7%C3%A3o+conceito&sxsrf=ALiCzsbkZ0PBfuZKqPgZ4ZmSOlGvsxYZgw%3A1670960603937&ei=29WYY47gOPy45OUP6MiQ-AU&ved=0ahUKEwjOueyprff7AhV8HLkGHWgkBF8Q4dUDCA8&uact=5&oq=css+estiliza%C3%A7%C3%A3o+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAE6CggAEEcQ1gQQsAM6BAgAEEM6BQgAEIAEOg4ILhCABBDHARCvARDLAToICAAQgAQQywE6CggAEIAEEAoQywE6BggAEBYQHjoICAAQFhAeEAo6CAgAEBYQHhAPOgQIIRAVSgQIQRgASgQIRhgAUN4KWOIkYOAmaAFwAXgAgAGVAYgByRKSAQQwLjIwmAEAoAEByAEIwAEB&sclient=gws-wiz-serp"
-              ><input type="button" value="CSS" class="techButtons"
-            /></a>
+              ><input type="button" value="CSS" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=javascript+linguagem&sxsrf=ALiCzsb4NQsm0E6KUEag2fg8eOnVT8cShg%3A1670960628471&ei=9NWYY8GsHKqp5OUPsOmL2Ag&ved=0ahUKEwjB9sW1rff7AhWqFLkGHbD0AosQ4dUDCA8&uact=5&oq=javascript+linguagem&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CwgAEIAEELEDEIMBOgsILhCABBCxAxCDAToICC4QsQMQgwE6CAgAELEDEIMBOgQIABBDOggILhCABBCxAzoFCC4QgAQ6CggAELEDEIMBEEM6CwguEIAEEMcBEK8BOggIABCABBCxAzoICAAQgAQQywE6CAgAEBYQHhAKOggIABAWEB4QD0oECEEYAEoECEYYAFAAWJsTYIoUaABwAXgAgAGcAYgBjBGSAQQxLjE4mAEAoAEBwAEB&sclient=gws-wiz-serp"
-              ><input type="button" value="JAVASCRIPT" class="techButtons"
-            /></a>
+              ><input type="button" value="JAVASCRIPT" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=bulma+conceito&sxsrf=ALiCzsZZXixVjg-93bVF7JwyoxuUIA0xDw%3A1670960660800&ei=FNaYY-TAMIfM5OUP1Z2U4AQ&ved=0ahUKEwjkmvvErff7AhUHJrkGHdUOBUwQ4dUDCA8&uact=5&oq=bulma+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABOgoIABBHENYEELADOgcIABCwAxBDOgQIABBDOggIABCABBCxAzoFCAAQgAQ6CAgAEIAEEMsBOgYIABAWEB46CggAEBYQHhAPEApKBAhBGABKBAhGGABQ6gNYuQpghgtoAXABeACAAYgBiAG3BpIBAzAuN5gBAKABAcgBCsABAQ&sclient=gws-wiz-serp"
-              ><input type="button" value="BULMA" class="techButtons"
-            /></a>
+              ><input type="button" value="BULMA" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=node+js+conceito&sxsrf=ALiCzsa2fGUjjx_7qilzR3RGC7v1F-a2Zg%3A1670960665445&ei=GdaYY-HqGpm55OUP7NS9gAY&ved=0ahUKEwih25bHrff7AhWZHLkGHWxqD2AQ4dUDCA8&uact=5&oq=node+js+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeOgQIIxAnOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6CwguEIAEELEDEIMBOgQIABBDOggIABCxAxCDAToFCAAQgAQ6CAgAEIAEELEDOgQIABADOggIABCABBDLAUoECEEYAEoECEYYAFAAWNUSYJITaABwAXgAgAGDAYgBig2SAQQxLjE0mAEAoAEBwAEB&sclient=gws-wiz-serp"
-              ><input type="button" value="NODE JS" class="techButtons"
-            /></a>
+              ><input type="button" value="NODE JS" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=excel+conceito&sxsrf=ALiCzsbgQpbEkw7qY6MT7fXTz-KvOwJERA%3A1670960679384&ei=J9aYY9OJF-vC5OUP58CD0AQ&ved=0ahUKEwiTuenNrff7AhVrIbkGHWfgAEoQ4dUDCA8&uact=5&oq=excel+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECCMQJzoLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOg4ILhCxAxCDARDHARDRAzoRCC4QsQMQgwEQxwEQ0QMQ1AI6BAgAEEM6CAgAEIAEELEDOggIABCxAxCDAToMCAAQsQMQQxBGEPkBOg0IABCABBCxAxCDARAKOgcIABCxAxBDOgoIABCABBCxAxAKOgoIABCxAxCDARBDOgsILhCABBDHARCvAToICAAQgAQQywE6CggAEIAEEAoQywFKBAhBGABKBAhGGABQAFiBDGCiD2gAcAF4AIABjAGIAdoMkgEEMi4xMpgBAKABAcABAQ&sclient=gws-wiz-serp"
-              ><input type="button" value="EXCEL" class="techButtons"
-            /></a>
+              ><input type="button" value="EXCEL" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=npm+conceito&sxsrf=ALiCzsacpAGDYYOgwIVZXQW5hNrl3dX09w%3A1670960698427&ei=OtaYY9zRGcT05OUP7qWn2AY&ved=0ahUKEwjc1vPWrff7AhVEOrkGHe7SCWsQ4dUDCA8&uact=5&oq=npm+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeOgQIIxAnOgUIABCABDoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgsILhCABBCxAxCDAToECAAQQzoKCAAQsQMQgwEQQzoICAAQgAQQywE6CAgAEBYQHhAPOgoIABAWEB4QDxAKSgQIQRgASgQIRhgAUABY4wtgqQxoAHABeACAAX-IAeUJkgEEMC4xMZgBAKABAcABAQ&sclient=gws-wiz-serp"
-              ><input type="button" value="NPM" class="techButtons"
-            /></a>
+              ><input type="button" value="NPM" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=boostrap+framework+conceito&sxsrf=ALiCzsYmTjbqN5pPUK8CdmR3lC5erreUwg%3A1670960727521&ei=V9aYY8SzH8DE5OUPqtqgyA8&ved=0ahUKEwiEu-Pkrff7AhVAIrkGHSotCPkQ4dUDCA8&uact=5&oq=boostrap+framework+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjoKCAAQRxDWBBCwAzoHCAAQgAQQDToGCAAQHhANOgYIABAWEB46CQgAEIAEEA0QEzoMCAAQFhAeEA8QChATOggIABAWEB4QEzoKCAAQFhAeEA8QCjoJCAAQFhAeEPEEOggIABAIEB4QDToKCAAQCBAeEA8QDUoECEEYAEoECEYYAFCHAliHCWDHCWgBcAF4AIABigGIAd8HkgEDMC44mAEAoAEByAEIwAEB&sclient=gws-wiz-serp"
-              ><input type="button" value="BOOSTRAP" class="techButtons"
-            /></a>
+              ><input type="button" value="BOOSTRAP" class="techButtons"/>
+            </a>
             <a
               href="https://www.google.com.br/search?q=mongo+db+conceito&sxsrf=ALiCzsZswDIr2TInGwCUTdfmWerCLItRCw%3A1670960731323&ei=W9aYY_CxE7Sr5OUPy4m_gAY&ved=0ahUKEwiwy8vmrff7AhW0FbkGHcvED2AQ4dUDCA8&uact=5&oq=mongo+db+conceito&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQCBAeEA06BAgjECc6FAguEIAEELEDEIMBEMcBENEDENQCOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAguELEDEIMBOgYIABAKEEM6CgguEMcBENEDEEM6BQguEIAEOg4ILhCxAxCDARDHARDRAzoICAAQgAQQsQM6CAguEIMBELEDOgQIABBDOgcILhDUAhBDOgoIABCxAxCDARBDOhAILhCDARDUAhCxAxCABBAKOgoIABCABBCxAxAKOgcIABCxAxBDOgcILhDUAhADOg0IABCABBCxAxCDARAKOg4ILhCDARDUAhCxAxCABDoNCC4QgwEQ1AIQsQMQQzoFCAAQgAQ6BwgAEIAEEAo6CggAEIAEEAoQywE6BwgAEIAEEA06BggAEB4QDToICAAQFhAeEAo6CwgAEBYQHhDxBBAKOggIABAFEB4QDToGCAAQFhAeSgQIQRgASgQIRhgAUABY2xhgmRloAHABeACAAX6IAZkOkgEEMC4xNpgBAKABAcABAQ&sclient=gws-wiz-serp"
-              ><input type="button" value="MONGO DB" class="techButtons"
-            /></a>
+              ><input type="button" value="MONGO DB" class="techButtons"/>
+            </a>
           </div>
         </div>
         <div class="box box-experiences">
@@ -167,24 +132,24 @@
           </div>
           <div>
             <ul>
-              <li>Rocketseat</li>
-              <p id="#subsub-title-experiences">2019 - Atualmente</p>
-              <p>Community Experience</p>
+              <li>GS Cred</li>
+              <p id="#subsub-title-experiences1">2022 - Atualmente</p>
+              <p>Técnico de Desenvolvimento e Infraestrutura</p>
             </ul>
             <ul>
-              <li>Rocketseat</li>
-              <p id="#subsub-title-experiences">2019 - Atualmente</p>
-              <p>Community Experience</p>
+              <li>Hospital Santa Luiza</li>
+              <p id="#subsub-title-experiences2">2014 - 2015</p>
+              <p>Técnico Auxiliar de Suporte e Controle de Qualidade</p>
             </ul>
             <ul>
-              <li>Rocketseat</li>
-              <p id="#subsub-title-experiences">2019 - Atualmente</p>
-              <p>Community Experience</p>
+              <li>Univali - Vale do Itajaí</li>
+              <p id="#subsub-title-experiences3">2012 - 2013</p>
+              <p>Projeto Lótus - Caça Níqueis</p>
             </ul>
             <ul>
-              <li>Rocketseat</li>
-              <p id="#subsub-title-experiences">2019 - Atualmente</p>
-              <p>Community Experience</p>
+              <li>Itake Telecom</li>
+              <p id="#subsub-title-experiences4">2010 - 2011</p>
+              <p>Telemarketing de Suporte ao Cliente</p>
             </ul>
           </div>
         </div>
@@ -214,12 +179,16 @@
       </div>
       <div class="box box-right">
         <div class="box box-myprojects">
-          <div class="myprojects-items"><p id="title-myprojects">My Project</p></div>
-          <div class="myprojects-items"><p>Veja Todos</p></div>
+          <div class="myprojects-items">
+            <p id="title-myprojects">My Project</p>
+          </div>
+          <div class="myprojects-items">
+            <p id="other-option-myprojects">Veja Todos</p>
+          </div>
         </div>
         <div class="box box-projectOne">
           <div class="box-projectOne-folder">
-            <img src="./assets/folder.svg" alt="Folder" class="linksIcons" />
+            <img src="./assets/folder.svg" alt="Folder" class="linksIcons"/>
             <p>my-onix</p>
           </div>
           <p>
@@ -227,19 +196,16 @@
           </p>
           <div class="box-icons-assets">
             <div class="box-projectOne-star">
-              <img src="./assets/star.svg" alt="Star" class="linksIcons" />
+              <img src="./assets/star.svg" alt="Star" class="linksIcons"/>
               <p>100</p>
             </div>
             <div class="box-projectOne-git-branch">
-              <img
-                src="./assets/git-branch.svg"
-                alt="Git-Branch"
-                class="linksIcons"
-              />
+              <img src="./assets/git-branch.svg" alt="Git-Branch" class="linksIcons"/>
               <p>100</p>
             </div>
             <div class="box-icon-language">
               <div class="align-box-icon-language">
+                <!-- icone amarelo ao lado do javascript\/ -->
                 <div class="icon-language"></div>
                 <p>JavaScript</p>
               </div>
@@ -248,7 +214,7 @@
         </div>
         <div class="box box-projectTwo">
           <div class="box-projectTwo-folder">
-            <img src="./assets/folder.svg" alt="Folder" class="linksIcons" />
+            <img src="./assets/folder.svg" alt="Folder" class="linksIcons"/>
             <p>my-onix</p>
           </div>
           <p>
@@ -256,19 +222,16 @@
           </p>
           <div class="box-icons-assets">
             <div class="box-projectTwo-star">
-              <img src="./assets/star.svg" alt="Star" class="linksIcons" />
+              <img src="./assets/star.svg" alt="Star" class="linksIcons"/>
               <p>100</p>
             </div>
             <div class="box-projectTwo-git-branch">
-              <img
-                src="./assets/git-branch.svg"
-                alt="Git-Branch"
-                class="linksIcons"
-              />
+              <img src="./assets/git-branch.svg" alt="Git-Branch" class="linksIcons"/>
               <p>100</p>
             </div>
             <div class="box-icon-language">
               <div class="align-box-icon-language">
+                <!-- icone amarelo ao lado do javascript\/ -->
                 <div class="icon-language"></div>
                 <p>JavaScript</p>
               </div>
@@ -280,13 +243,9 @@
         </div>
         <div class="box box-posts">
           <div class="box-img-post">
-            <img
-              src="./images/foto perfil.jpg"
-              alt="Foto Perfil"
-              class="imgPostRound"
-            />
+            <img src="./images/foto perfil.jpg" alt="Foto Perfil" class="imgPostRound"/>
           </div>
-          <br />
+          <br/>
           <div class="box-align-post-middleTop">
             <p>
               Erro adb devices no Genymotion e Android Studio (React Native)
