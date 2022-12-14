@@ -1,3 +1,3 @@
 # Projeto-Portif-lio
 
-Projeto final Senai para o primeiro semestre.
+Projeto final Senai do primeiro semestre turma de 2022.
